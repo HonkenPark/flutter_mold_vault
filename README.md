@@ -1,3 +1,4 @@
+<img src="assets/images/flutter_mold_vault_logo.png" alt="FMV Logo" width="200" height="200" /><br>
 # 💻 Flutter Mold Vault
 
 [![Flutter Version](https://img.shields.io/badge/flutter-3.22.2-blue)](https://flutter.dev)
@@ -30,7 +31,7 @@ Before you begin, ensure you have the following installed:
         choco install flutter --version=3.22.2
 2. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/flutter-project-name.git
+   git clone https://github.com/HonkenPark/flutter_mold_vault.git
 3. Navigate to the project directory:
     ```bash
    cd flutter_mold_valut
@@ -59,11 +60,11 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ### 🗂️ Project Structure
     lib/
-    ├── main.dart         # Entry point of the application
-    ├── core/model/       # Data models
-    ├── core/service/     # Backend or API integrations
-    ├── core/viewmodel/   # ViewModels for services
-    ├── view/demo         # App screens
-    ├── widgets/          # Reusable widgets
-    └── utils/            # Utility functions and helpers
+    ├── main.dart          # Entry point of the application
+    ├── core/models/       # Data models
+    ├── core/services/     # Backend or API integrations
+    ├── core/viewmodels/   # ViewModels for services
+    ├── views/demo         # App screens
+    ├── widgets/           # Reusable widgets
+    └── utils/             # Utility functions and helpers
 ---
