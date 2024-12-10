@@ -1,4 +1,4 @@
-<img src="assets/images/flutter_mold_vault_logo.png" alt="FMV Logo" width="200" height="200" /><br>
+<img src="assets/images/fmv_logo_600x600.png" alt="FMV Logo" width="200" height="200" /><br>
 # 💻 Flutter Mold Vault
 
 [![Flutter Version](https://img.shields.io/badge/flutter-3.22.2-blue)](https://flutter.dev)
