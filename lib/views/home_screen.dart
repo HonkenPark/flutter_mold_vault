@@ -7,27 +7,33 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        ElevatedButton(
-          child: const Text('Splash Screen Demo'),
-          // onPressed: () => Get.offAll(
-          //   () => SplashScreen(),
-          // ),
-          // onPressed: () => Get.toNamed('/splash'),
-          onPressed: () => Get.to(() => SplashScreen()),
+    /// When switching between screens using GetX, it is common to wrap the widget with Scaffold even on a new screen.
+    /// Scaffold provides the basic layout structure of the Flutter, so you can use it on a per-screen basis.
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              child: const Text('Splash Screen Demo'),
+              // onPressed: () => Get.offAll(
+              //   () => SplashScreen(),
+              // ),
+              // onPressed: () => Get.toNamed('/splash'),
+              onPressed: () => Get.to(() => SplashScreen()),
+            ),
+            const SizedBox(height: 24),
+            ElevatedButton(
+              child: const Text('Login Screen Demo'),
+              // onPressed: () => Get.offAll(
+              //   () => SplashScreen(),
+              // ),
+              // onPressed: () => Get.toNamed('/splash'),
+              onPressed: () => Get.to(() => SplashScreen()),
+            ),
+          ],
         ),
-        const SizedBox(height: 24),
-        ElevatedButton(
-          child: const Text('Login Screen Demo'),
-          // onPressed: () => Get.offAll(
-          //   () => SplashScreen(),
-          // ),
-          // onPressed: () => Get.toNamed('/splash'),
-          onPressed: () => Get.to(() => SplashScreen()),
-        ),
-      ],
+      ),
     );
   }
 }
