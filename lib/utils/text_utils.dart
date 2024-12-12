@@ -1,3 +1,5 @@
+import 'dart:math';
+
 /// Personal information (unique identification information, name, password, address, phone number, account number, credit card number, sensitive information, etc.)
 /// that needs to be restricted from display must be designated and some of the designated personal information items must be masked.
 /// If the name is at least the first letter of the first name, or if the last name is two characters,
@@ -67,4 +69,18 @@ String removeNonNumeric(String? input) {
     return '';
   }
   return onlyNumbers;
+}
+
+/// Key generate Algorithm
+String generateCryptoKey(String input) {
+  if (input.isNotEmpty) {
+    try {
+      Random randomXor = Random(DateTime.parse(input).millisecondsSinceEpoch ^ DateTime.parse(input).second.hashCode);
+      Random randomAddXor = Random((DateTime.parse(input).second.hashCode + DateTime.parse(input).millisecondsSinceEpoch) ^ (DateTime.parse(input).millisecondsSinceEpoch << 3));
+      return "${List.generate(8, (_) => randomXor.nextInt(256)).map((b) => b.toRadixString(16).padLeft(2, '0')).join()}${List.generate(8, (_) => randomAddXor.nextInt(256)).map((b) => b.toRadixString(16).padLeft(2, '0')).join()}";
+    } catch (e) {
+      return '';
+    }
+  }
+  return '';
 }
