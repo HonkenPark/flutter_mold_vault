@@ -9,6 +9,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     /// When switching between screens using GetX, it is common to wrap the widget with Scaffold even on a new screen.
     /// Scaffold provides the basic layout structure of the Flutter, so you can use it on a per-screen basis.
+    /// This is a demo screen for testing the functionality of the project.
     return Scaffold(
       body: Center(
         child: Column(

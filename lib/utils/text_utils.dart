@@ -5,6 +5,9 @@ import 'dart:math';
 /// If the name is at least the first letter of the first name, or if the last name is two characters,
 /// the rest of the name except the first and last names are replaced with *, regardless of the last name.
 /// Guide to the Application of Personal Information Protection Measures (개인정보 보호조치 적용 안내서 - 개인정보보호위원회, 한국인터넷진흥원)
+/// argument: name (String) - input string
+/// return: String - masked name
+/// example: maskingName('홍길동') -> '홍*동'
 String maskingName(String name) {
   if (name.length == 1) {
     return name;
@@ -15,7 +18,9 @@ String maskingName(String name) {
   }
 }
 
-/// Function of auto dash for phone number specialized in Korean system
+/// Function of auto dash for phone number specialized in Korean syst em
+/// argument: input (String) - input string
+/// return: String - formatted phone number
 String convertFormatPhoneNumber(String input) {
   // 82로 시작하고 핸드폰 번호(010) 또는 지역번호에서 0을 뺀 번호로만 허용
   final countryMobilePattern = RegExp(r'^82(10)(\d{3,4})(\d{4})$');
@@ -60,6 +65,9 @@ String convertFormatPhoneNumber(String input) {
 }
 
 /// Filtered only number
+/// argument: input (String) - input string
+/// return: String - only number string
+/// example: removeNonNumeric('123-456-7890') -> '1234567890'
 String removeNonNumeric(String? input) {
   if (input == null) {
     return '';
@@ -72,6 +80,8 @@ String removeNonNumeric(String? input) {
 }
 
 /// Key generate Algorithm
+/// argument: input (String) - UTC time
+/// return: String - 16 bytes
 String generateCryptoKey(String input) {
   if (input.isNotEmpty) {
     try {

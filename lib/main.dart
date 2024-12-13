@@ -8,12 +8,15 @@ void main() async {
   /// Don't need to use Future.delayed() or Get.delayed() in main.dart.
   /// The main tasks in main.dart are to initialize the app and prepare it to run, because Future.delayed() is not required.
   /// main.dart is the part that handles the initialization tasks required before the app runs So it can be use WidgetsFlutterBinding.ensureInitialized().
+  /// reference: https://docs.flutter.dev/development/ui/widgets-intro#main-function
   WidgetsFlutterBinding.ensureInitialized();
 
   /// API key or URL information are managed by env
+  /// reference: https://pub.dev/packages/flutter_dotenv
   await dotenv.load(fileName: '.env');
 
   /// Put GetXController which need to be pre-loaded
+  /// reference: https://pub.dev/packages/get#pre-loading-controllers
   Get.put(MoldVaultController());
 
   runApp(MoldVaultApp());

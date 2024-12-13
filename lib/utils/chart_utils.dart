@@ -1,5 +1,8 @@
 /// To determine interval value when using pluto_grid chart
 /// This function calculates the minimum value of multiples of 10 of  the digits of the maximum value.
+/// argument: maxValue (int) - maximum value
+/// return: double - interval value
+/// example: calculateInterval(100) -> 10
 double calculateInterval(int maxValue) {
   if (maxValue > 0) {
     int maxDigit = 1;
@@ -14,6 +17,9 @@ double calculateInterval(int maxValue) {
 }
 
 /// Based on a given value, this function calculates a maximum value that matches 20% of the value.
+/// argument: value (int) - input value
+/// return: double - maximum value
+/// example: calculateMaxY(100) -> 120
 double calculateMaxY(int value) {
   if (value > 0) {
     int maxValue = (value * 1.2).floor();

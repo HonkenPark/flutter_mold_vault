@@ -17,6 +17,7 @@ class SplashScreenController extends GetxController with GetSingleTickerProvider
 
     Future.delayed(const Duration(seconds: 2), () {
       /// Verify that certain types of objects are registered with the GetX dependency injection system
+      /// If the SplashScreenController is registered, navigate to the HomeScreen.
       if (Get.isRegistered<SplashScreenController>()) {
         // Get.offAll(() => const HomeScreen());
         Get.back();
