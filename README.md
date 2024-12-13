@@ -9,9 +9,9 @@
 **Flutter Mold Vault** is a project developed using Dart/Flutter, which provides **reproducibility of code that works in a special way with widgets** to maximize the efficiency of temporal resources in project implementation.
 
 ### Key Features
-- **#1**: This project uses **GetX** for state management and navigation.
-- **#2**: This project can be built for all supported platforms.
-- **#3**: This project will be updated in sync with installed packages.
+1. This project uses **GetX** for state management and navigation.
+2. This project can be built for all supported platforms.
+3. This project will be updated in sync with installed packages.
 ---
 
 ## 🚀 Getting Started
