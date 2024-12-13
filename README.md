@@ -1,7 +1,7 @@
 <img src="assets/images/fmv_logo_600x600.png" alt="FMV Logo" width="200" height="200" /><br>
 # 💻 Flutter Mold Vault
 
-[![Flutter Version](https://img.shields.io/badge/flutter-3.22.2-blue)](https://flutter.dev)
+[![Flutter Version](https://img.shields.io/badge/flutter-3.27.0-blue)](https://flutter.dev)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 ## 📖 Introduction
@@ -18,8 +18,8 @@
 
 ### 📋 Prerequisites
 Before you begin, ensure you have the following installed:
-- Flutter SDK `3.22.2` or higher
-- Dart `3.4.3` or higher
+- Flutter SDK `3.27.0` or higher
+- Dart `3.6.0` or higher
 ---
 
 ### 🔧 Installation
@@ -28,7 +28,7 @@ Before you begin, ensure you have the following installed:
    2.  Copy the Powershell command of 'Install Chocolatey for Individual Use' page in  https://chocolatey.org/install
    3. Run the command below
         ```bash
-        choco install flutter --version=3.22.2
+        choco install flutter --version=3.27.0
 2. Clone the repository:
    ```bash
    git clone https://github.com/HonkenPark/flutter_mold_vault.git
@@ -64,7 +64,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
     ├── core/models/       # Data models
     ├── core/services/     # Backend or API integrations
     ├── core/viewmodels/   # ViewModels for services
-    ├── views/demo         # App screens
-    ├── widgets/           # Reusable widgets
-    └── utils/             # Utility functions and helpers
+    ├── utils/             # Utility functions and helpers
+    ├── views/demo/        # Demo screens for its feature
+    └── widgets/           # Reusable widgets
 ---
