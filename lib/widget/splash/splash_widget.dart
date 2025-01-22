@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-// import 'package:flutter_mold_vault/views/home_screen.dart';
+// import 'package:flutter_mold_vault/views/base_screen.dart';
 import 'package:get/get.dart';
 
 class SplashScreenController extends GetxController with GetSingleTickerProviderStateMixin {
@@ -17,9 +17,9 @@ class SplashScreenController extends GetxController with GetSingleTickerProvider
 
     Future.delayed(const Duration(seconds: 2), () {
       /// Verify that certain types of objects are registered with the GetX dependency injection system
-      /// If the SplashScreenController is registered, navigate to the HomeScreen.
+      /// If the SplashScreenController is registered, navigate to the BaseScreen.
       if (Get.isRegistered<SplashScreenController>()) {
-        // Get.offAll(() => const HomeScreen());
+        // Get.offAll(() => const BaseScreen());
         Get.back();
       }
     });

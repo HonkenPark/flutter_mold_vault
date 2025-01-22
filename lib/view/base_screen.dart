@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mold_vault/views/demo/splash_screen.dart';
+import 'package:flutter_mold_vault/view/demo/splash_screen.dart';
 import 'package:get/get.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class BaseScreen extends StatelessWidget {
+  const BaseScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

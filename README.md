@@ -60,11 +60,17 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ### 🗂️ Project Structure
     lib/
-    ├── main.dart          # Entry point of the application
-    ├── core/models/       # Data models
-    ├── core/services/     # Backend or API integrations
-    ├── core/viewmodels/   # ViewModels for services
-    ├── utils/             # Utility functions and helpers
-    ├── views/demo/        # Demo screens for its feature
-    └── widgets/           # Reusable widgets
+    ├── main.dart             # Entry point of the application
+    ├── config/route          # Routing information
+    ├── config/theme          # Define App theme
+    ├── config/constants.dart # Common const value
+    ├── config/enums.dart     # Common enum value
+    ├── controller/           # Define GetX controller
+    ├── data/model/           # Data models
+    ├── data/network/         # API request/response definition
+    ├── data/repository/      # Repository for API
+    ├── util/                 # Utility functions and helpers
+    ├── view/demo/            # Demo screens for its feature
+    ├── view_model/           # ViewModels for repository
+    └── widget/               # Reusable widgets
 ---

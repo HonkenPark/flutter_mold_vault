@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_mold_vault/views/home_screen.dart';
+import 'package:flutter_mold_vault/view/base_screen.dart';
 import 'package:get/get.dart';
 
 void main() async {
@@ -64,7 +64,7 @@ class MoldVaultApp extends StatelessWidget {
                   )),
             ),
             body: const Center(
-              child: HomeScreen(),
+              child: BaseScreen(),
             ),
           ),
 
