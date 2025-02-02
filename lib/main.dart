@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_mold_vault/controller/base_controller.dart';
+import 'package:flutter_mold_vault/controller/login_controller.dart';
 import 'package:flutter_mold_vault/view/base_screen.dart';
 import 'package:get/get.dart';
 
@@ -18,6 +20,8 @@ void main() async {
   /// Put GetXController which need to be pre-loaded
   /// reference: https://pub.dev/packages/get#pre-loading-controllers
   Get.put(MoldVaultController());
+  Get.put(BaseController());
+  Get.put(LoginController());
 
   runApp(MoldVaultApp());
 }

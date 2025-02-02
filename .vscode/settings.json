@@ -1,3 +1,12 @@
 {
-    "cmake.sourceDirectory": "/Users/honken/dev/02_remote/work/flutter_mold_vault/linux"
+    "cmake.sourceDirectory": "/Users/honken/dev/02_remote/work/flutter_mold_vault/linux",
+    "workbench.colorCustomizations": {
+        "sash.hoverBorder": "#7ea2ba",
+        "statusBar.background": "#5d8aa8",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#7ea2ba",
+        "statusBarItem.remoteBackground": "#5d8aa8",
+        "statusBarItem.remoteForeground": "#e7e7e7"
+    },
+    "peacock.color": "#5d8aa8"
 }

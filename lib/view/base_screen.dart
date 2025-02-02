@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mold_vault/view/demo/login_screen.dart';
 import 'package:flutter_mold_vault/view/demo/splash_screen.dart';
 import 'package:get/get.dart';
 
@@ -30,7 +31,7 @@ class BaseScreen extends StatelessWidget {
               //   () => SplashScreen(),
               // ),
               // onPressed: () => Get.toNamed('/splash'),
-              onPressed: () => Get.to(() => SplashScreen()),
+              onPressed: () => Get.to(() => const LoginScreen()),
             ),
           ],
         ),
