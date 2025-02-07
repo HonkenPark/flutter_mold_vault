@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mold_vault/view/demo/login_screen.dart';
+import 'package:flutter_mold_vault/view/demo/login_logo_screen.dart';
 import 'package:flutter_mold_vault/view/demo/splash_screen.dart';
 import 'package:get/get.dart';
 
@@ -26,11 +27,20 @@ class BaseScreen extends StatelessWidget {
             ),
             const SizedBox(height: 24),
             ElevatedButton(
+              child: const Text('Login Logo Screen Demo'),
+              // onPressed: () => Get.offAll(
+              //   () => LoginLogoScreen(),
+              // ),
+              // onPressed: () => Get.toNamed('/loginlogo'),
+              onPressed: () => Get.to(() => const LoginLogoScreen()),
+            ),
+            const SizedBox(height: 24),
+            ElevatedButton(
               child: const Text('Login Screen Demo'),
               // onPressed: () => Get.offAll(
-              //   () => SplashScreen(),
+              //   () => LoginScreen(),
               // ),
-              // onPressed: () => Get.toNamed('/splash'),
+              // onPressed: () => Get.toNamed('/login'),
               onPressed: () => Get.to(() => const LoginScreen()),
             ),
           ],

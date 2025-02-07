@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_mold_vault/config/theme/app_colors.dart';
 import 'package:flutter_mold_vault/controller/base_controller.dart';
 import 'package:flutter_mold_vault/controller/login_controller.dart';
 import 'package:flutter_mold_vault/view/base_screen.dart';
@@ -49,7 +50,7 @@ class MoldVaultApp extends StatelessWidget {
             //   bodyMedium: TextStyle(fontFamily: 'FontFamilyName', fontWeight: FontWeight.w700),
             //   headlineLarge: TextStyle(fontFamily: 'FontFamilyNameOther', fontWeight: FontWeight.w700),
             // ),
-            colorScheme: moldVaultController.isDarkMode ? const ColorScheme.dark(primary: Colors.lime) : const ColorScheme.light(primary: Colors.lime),
+            colorScheme: moldVaultController.isDarkMode ? const ColorScheme.dark(primary: AppColors.oceanBlue) : const ColorScheme.light(primary: AppColors.oceanBlue),
           ),
           title: 'Flutter Mold Vault',
           home: Scaffold(

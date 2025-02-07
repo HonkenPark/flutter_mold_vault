@@ -4,6 +4,12 @@ import 'app_colors.dart';
 class AppTextStyles {
   AppTextStyles._();
 
+  static const TextStyle loginTitle = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+    color: Color(0xFF410C0C),
+  );
+
   static const TextStyle headline1 = TextStyle(
     fontSize: 24,
     fontWeight: FontWeight.bold,

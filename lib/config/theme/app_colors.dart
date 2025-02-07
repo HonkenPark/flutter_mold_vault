@@ -27,6 +27,7 @@ class AppColors {
 
   // Red
   static const Color burntRose = Color(0xFFB83A3A);
+  static const Color charcoalRed = Color(0xFF8E3838);
   static const Color crimsonFlare = Color(0xFFB00020);
 
   // Green

@@ -60,19 +60,6 @@ class LoginController extends GetxController {
   bool get isAutoLogin => _isAutoLogin.value;
   set isAutoLogin(bool value) => _isAutoLogin.value = value;
 
-  Future<void> handleLogin(String id, String password) async {
-    if (id.isNotEmpty || password.isNotEmpty) {
-      isBtnLoading = true;
-      try {
-        dynamic success;
-      } catch (e) {
-        showSnackbar('로그인 실패', e.toString());
-      } finally {
-        isBtnLoading = false;
-      }
-    }
-  }
-
   String getIsSavedId() {
     String? isSavedId = fetchStorage('isSavedId');
     if (isSavedId != null && isSavedId.isNotEmpty) {
